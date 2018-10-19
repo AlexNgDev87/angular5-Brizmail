@@ -1,0 +1,18 @@
+<div>
+  <form>
+    <div class="form-group">
+      <label for="recipients">Recipients</label>
+      <input type="email" class="form-control" multiple id="recipients" [(ngModel)]="emailInfo.To" name="To"
+        placeholder="foo@example.com, bar@example.com">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" class="form-control" id="subject" [(ngModel)]="emailInfo.Subject" name="Subject" placeholder="Add a subject">
+    </div>
+    <div class="form-group">
+      <label for="body">Body (Text)</label>
+      <textarea class="form-control" id="body" rows="5" [(ngModel)]="emailInfo.Text" name="Text"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="sendEmail($event)">Send</button>
+  </form>
+</div>

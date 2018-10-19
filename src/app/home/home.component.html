@@ -1,0 +1,9 @@
+<div>
+  <div *ngIf="status === 1" class="alert alert-success" role="alert">
+    Email has been sent successfully
+  </div>
+  <div *ngIf="status === 0" class="alert alert-danger" role="alert">
+    Email submission failed
+  </div>
+  <app-send-email (emailCreated)="createEmail($event)" [emailInfo]="currentEmail"></app-send-email>
+</div>
