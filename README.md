@@ -16,8 +16,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 1. Run `npm install` command at the project root level
 2. Run `ng serve` command to run the application
 3. Enter the following details to the form
-  * Recipient (Email Address)
-  * Subject
-  * Text
+    - Recipient (Email Address)
+    - Subject
+    - Text
 4. Click on the **Send** button
 
